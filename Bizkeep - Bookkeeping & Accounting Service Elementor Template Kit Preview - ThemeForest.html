@@ -1,5 +1,7 @@
+<!-- 
 <!DOCTYPE html>
 <!-- saved from url=(0186)https://preview.themeforest.net/item/bizkeep-bookkeeping-accounting-service-elementor-template-kit/full_screen_preview/35032715?_ga=2.169967395.2057583272.1742387371-481003741.1742387371 -->
+<!--
 <html lang="en" class="no-js">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -7121,5 +7123,134 @@ who want..."
       data-cookieconsent="ignore"
       style="display: none"
     />
+  </body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Today I Learned!</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img src="logo.png" alt="Today I Learned Logo" />
+          <!-- src = source -->
+          <h1>Today I Learned</h1>
+        </div>
+
+        <button class="btn btn-large btn-open">Share a Fact</button>
+      </header>
+
+      <form class="fact-form hidden">
+        <input type="text" placeholder="Share a fact with the world ..." />
+        <span>200</span>
+        <input type="text" placeholder="Trustworthy spurce..." />
+        <select name="" id="">
+          <option value="">Choose category:</option>
+          <option value="technology">Technology</option>
+          <option value="science">Science</option>
+          <option value="finance">Finance</option>
+        </select>
+        <button class="btn btn-large">POST</button>
+      </form>
+
+      <!-- Form = used to put a form into sepcific graph
+    select = used to drop down with the options
+    value = value is always needed to have with option -->
+
+      <main class="main">
+        <aside>
+          <ul>
+            <li class="category">
+              <button class="btn btn-all-categories">All</button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-categories"
+                style="background-color: #3b82f6"
+              >
+                Technology
+              </button>
+            </li>
+            <li class="category">
+              <button
+                class="btn btn-categories"
+                style="background-color: #16a34a"
+              >
+                Science
+              </button>
+            </li>
+          </ul>
+        </aside>
+        <!-- aside = secondary content .. After that use section for another one -->
+
+        <section>
+          <ul class="fact-lists">
+            <li class="fact">
+              <p>
+                React is being developed by Meta (formerly facebook)
+                <a
+                  class="source"
+                  href="https://opensource.fb.com/"
+                  target="_blank"
+                  >(Source)</a
+                >
+                <!-- target -> If we want to control the link page
+                    Strong = we use "strong" instead of "b" bold becuase it has strong meaning -->
+              </p>
+              <span class="tag" style="background-color: #3b82f6"
+                >Technology</span
+              >
+              <div class="vote-button">
+                <button>👍 24</button>
+                <button>🤯 9</button>
+                <button>⛔️ 4</button>
+              </div>
+            </li>
+
+            <li class="fact">
+              <p>
+                Millennial dads spend 3 times as much time with their kids than
+                their fathers spent with them. In 1982, 43% of fathers had never
+                changed a diaper. Today, that number is down to 3%
+
+                <a
+                  href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
+                  target="_blank"
+                  class="source"
+                  >(Source)</a
+                >
+              </p>
+
+              <span class="tag" style="background-color: #eab308">society</span>
+
+              <div class="vote-button">
+                <button>👍 <strong> 11 </strong></button>
+                <button>🤯 <strong> 2 </strong></button>
+                <button>⛔️ <strong> 0 </strong></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
